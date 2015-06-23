@@ -1,0 +1,52 @@
+<!--
+@license
+Copyright (C) BlockWorks Consulting Ltd - All Rights Reserved.
+Unauthorized copying of this file, via any medium is strictly prohibited.
+Proprietary and confidential.
+Written by Steve Tickle <Steve@BlockWorks.co>, June 2015.
+-->
+
+<dom-module id="entry-day">
+  <style>
+    :host 
+    {
+      display: block;
+    }
+
+    @media (max-width: 600px) 
+    {
+      h1.paper-font-display1 
+      {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+  <template>
+    <h1 class="paper-font-display1"><span>{{greeting}}</span></h1>
+    <span class="paper-font-body2">Update text to change the greeting.</span>
+    <!-- Listens for "input" event and sets greeting to <input>.value -->
+    <input class="paper-font-body2" value="{{greeting::input}}">
+  </template>
+</dom-module>
+
+<script>
+
+  (function()
+  {
+    Polymer({
+      is: 'entry-day',
+
+      properties: 
+      {
+        greeting: 
+        {
+          type: String,
+          value: 'Entry for today!',
+          notify: true
+        }
+      }
+    });
+  })();
+
+</script>
