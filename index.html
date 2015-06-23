@@ -35,6 +35,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Main Toolbar -->
         <paper-toolbar id="mainToolbar">
+
+
           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
           <span class="flex"></span>
 
@@ -48,10 +50,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <!-- Application sub title -->
           <div class="bottom title"></div>
 
+          <paper-fab icon="add" style="color: blue; background:white;"></paper-fab>
+
         </paper-toolbar>
 
         <!-- Main Content -->
         <div class="content">
+
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">

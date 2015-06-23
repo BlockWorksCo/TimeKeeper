@@ -7,8 +7,18 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-body {
+body 
+{
   background: #fafafa;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
+}
+
+
+paper-fab 
+{
+    position: absolute;
+    top: 165px;
+    right: 16px;
+    z-index: 100;
 }
